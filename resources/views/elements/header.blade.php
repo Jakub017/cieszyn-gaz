@@ -14,7 +14,7 @@
                 <a href="#">Cennik</a>
             </li>
             <li class="menu-item">
-                <a href="#">Realizacje</a>
+                <a href="{{ route('realizations') }}">Realizacje</a>
             </li>
             <li class="menu-item">
                 <a href="#">Kontakt</a>

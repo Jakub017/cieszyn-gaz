@@ -17,4 +17,8 @@ class PagesController extends Controller
     public function getService() {
         return view('service');
     }
+
+    public function getRealizations() {
+        return view('realizations');
+    }
 }
