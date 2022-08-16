@@ -8,7 +8,7 @@
                 <a href="{{ route('installations') }}">Instalacje gazowe</a>
             </li>
             <li class="menu-item">
-                <a href="#">Serwis LPG</a>
+                <a href="{{ route('service') }}">Serwis LPG</a>
             </li>
             <li class="menu-item">
                 <a href="#">Cennik</a>

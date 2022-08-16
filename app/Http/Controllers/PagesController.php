@@ -13,4 +13,8 @@ class PagesController extends Controller
     public function getInstallations() {
         return view('installations');
     }
+
+    public function getService() {
+        return view('service');
+    }
 }

@@ -234,6 +234,22 @@ a.installation-link:hover {
     max-width: 100px;
 }
 
+
+
+/* Service page start */
+
+.service-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px 50px 20px;
+}
+
+.service-wrapper p {
+    margin-bottom: 50px;
+}
+
+/* Service page end */
+
 iframe {
     width: 100%;
     height: 300px;

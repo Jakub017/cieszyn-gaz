@@ -16,7 +16,8 @@ use App\Http\Controllers\PagesController;
 
 Route::get('/', [PagesController::class, 'getHomePage'])->name('home');
 Route::get('/instalacje-gazowe', [PagesController::class, 'getInstallations'])->name('installations');
-Route::get('/serwis-lpg', [PagesController::class, 'get Service'])->name('service');
+Route::get('/serwis-lpg', [PagesController::class, 'getService'])->name('service');
+Route::get('/serwis-lpg', [PagesController::class, 'getService'])->name('service');
 
 
 Route::group(['prefix' => 'admin'], function () {
