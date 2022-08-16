@@ -9,4 +9,8 @@ class PagesController extends Controller
     public function getHomePage() {
         return view('home');
     }
+
+    public function getInstallations() {
+        return view('installations');
+    }
 }

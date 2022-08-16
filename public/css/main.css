@@ -104,7 +104,7 @@ section {
 }
 
 .sidebar {
-    width: 100%
+    width: 100%;
 }
 
 .sidebar .form-container,
@@ -168,6 +168,70 @@ section {
     align-items: center;
     margin-top: 16px;
     margin-bottom: 16px;
+}
+
+.last-realizations-block {
+    max-height: 250px;
+}
+
+.carousel-item.active {
+    max-height: 250px;
+    max-width: 370px;
+}
+
+.carousel-item img {
+    max-height: 250px;
+    max-width: 370px;
+}
+
+
+
+.installations-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 10px 50px 10px;
+}
+
+.list-header {
+    margin-top: 30px;
+}
+
+.installation-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.installation-name {
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+}
+
+.installation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 30px var(--secondary-background);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+a.installation-link {
+    display: block;
+    color: #fff;
+    background-color: var(--orange);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+a.installation-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.installation-image img {
+    max-width: 100px;
 }
 
 iframe {
