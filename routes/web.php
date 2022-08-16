@@ -15,3 +15,8 @@ use App\Http\Controllers\PagesController;
 */
 
 Route::get('/', [PagesController::class, 'getHomePage']);
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
