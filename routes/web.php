@@ -14,13 +14,14 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/', [PagesController::class, 'getHomePage'])->name('home');
-Route::get('/instalacje-gazowe', [PagesController::class, 'getInstallations'])->name('installations');
-Route::get('/serwis-lpg', [PagesController::class, 'getService'])->name('service');
-Route::get('/realizacje', [PagesController::class, 'getRealizations'])->name('realizations');
-Route::get('/cennik', [PagesController::class, 'getPricing'])->name('pricing');
-Route::get('/kontakt', [PagesController::class, 'getContact'])->name('contact');
-
+Route::controller(PagesController::class)->group(function () {
+    Route::get('/', 'getHomePage')->name('home');
+    Route::get('/instalacje-gazowe', 'getInstallations')->name('installations');
+    Route::get('/serwis-lpg', 'getService')->name('service');
+    Route::get('/realizacje', 'getRealizations')->name('realizations');
+    Route::get('/cennik', 'getPricing')->name('pricing');
+    Route::get('/kontakt', 'getContact')->name('contact');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
