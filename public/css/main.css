@@ -572,6 +572,58 @@ a.installation-link:hover {
 
 /* Pricing page start */
 
+.pricing-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+}
+
+.pricing-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pricing-box {
+    background-color: var(--secondary-background);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px var(--secondary-background);
+}
+
+.price-name {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.price-name::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 5px;
+    background-color: var(--orange);
+    border-radius: 20px;
+    ;
+}
+
+.price-list {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+}
 
 /* Pricing page end */
 
