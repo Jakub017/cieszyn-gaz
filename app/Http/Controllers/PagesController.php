@@ -19,7 +19,9 @@ class PagesController extends Controller
     }
 
     public function getRealizations() {
-        return view('realizations');
+        $realizations = \App\Models\Realization::where('active', 1)->get();
+
+        return view('realizations', ['realizations' => $realizations]);
     }
 
      public function getPricing() {

@@ -6,64 +6,12 @@
     <div class="gallery-container">
         <h1>Realizacje</h1>
         <div class="gallery">
+            @foreach($realizations as $realization)            
             <div>
-                <img class="gallery__Image" src="{{asset('img/galeria1.png')}}"
-                    data-large="{{asset('img/galeria1.png')}}">
+                <img class="gallery__Image" src="{{ asset('storage/'.$realization->photo) }}"
+                    data-large="{{ asset('storage/'.$realization->photo) }}">
             </div>
-
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria2.png')}}"
-                    data-large="{{asset('img/galeria2.png')}}">
-            </div>
-
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria3.png')}}"
-                    data-large="{{asset('img/galeria3.png')}}">
-            </div>
-
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria4.png')}}"
-                    data-large="{{asset('img/galeria4.png')}}">
-            </div>
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria1.png')}}"
-                    data-large="{{asset('img/galeria1.png')}}">
-            </div>
-
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria2.png')}}"
-                    data-large="{{asset('img/galeria2.png')}}">
-            </div>
-
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria3.png')}}"
-                    data-large="{{asset('img/galeria3.png')}}">
-            </div>
-
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria4.png')}}"
-                    data-large="{{asset('img/galeria4.png')}}">
-            </div>
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria1.png')}}"
-                    data-large="{{asset('img/galeria1.png')}}">
-            </div>
-
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria2.png')}}"
-                    data-large="{{asset('img/galeria2.png')}}">
-            </div>
-
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria3.png')}}"
-                    data-large="{{asset('img/galeria3.png')}}">
-            </div>
-
-            <div>
-                <img class="gallery__Image" src="{{asset('img/galeria4.png')}}"
-                    data-large="{{asset('img/galeria4.png')}}">
-            </div>
-
+            @endforeach
         </div>
 
 </section>
