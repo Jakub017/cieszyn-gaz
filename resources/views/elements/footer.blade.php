@@ -4,5 +4,5 @@
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 <footer>
     <p>© 2022 Cieszyn-gaz.pl, Wszelkie prawa zastrzeżone.</p>
-    <p>Designed by: StronyDlaFirm.eu</p>
+    <p>Designed by: <a target="_blank" href="https://www.stronydlafirm.eu/">StronyDlaFirm.eu</a></p>
 </footer>

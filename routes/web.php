@@ -22,6 +22,7 @@ Route::controller(PagesController::class)->group(function () {
     Route::get('/realizacje', 'getRealizations')->name('realizations');
     Route::get('/cennik', 'getPricing')->name('pricing');
     Route::get('/kontakt', 'getContact')->name('contact');
+    Route::get('/polityka-cookies', 'getCookies')->name('cookies');
 });
 
 Route::controller(ContactController::class)->group(function () {
