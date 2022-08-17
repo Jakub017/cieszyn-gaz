@@ -25,3 +25,16 @@
         </div>
     </div>
 </nav>
+
+<div class="cookies-wrapper">
+    <div class="content">
+        <h4 class="cookies-header">Szanujemy Twoją prywatność</h4>
+        <p>Korzystamy z plików cookies i umożliwiamy zamieszczanie ich osobom trzecim. Pliki cookie pozwalają na
+            poznanie twoich preferencji na podstawie zachowań w serwisie. Uznajemy, że jeżeli kontynuujesz korzystanie z
+            serwisu, wyrażasz na to zgodę. Poznaj szczegóły i możliwości zmiany ustawień w <a
+                href="{{ route('cookies') }}">Polityce Cookies</a></p>
+        <div class="buttons">
+            <a href="javascript:acceptCookies()" class="item agree-cookies">Rozumiem</a>
+        </div>
+    </div>
+</div>
