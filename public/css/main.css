@@ -46,6 +46,11 @@ nav {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    transition: 0.3s color ease-in-out;
+}
+
+.menu-item a:hover {
+    color: #ccc;
 }
 
 .main-screen {
@@ -114,9 +119,9 @@ section {
     padding: 10px;
 }
 
-.realizations-container {
+/* .realizations-container {
     margin-top: 20px;
-}
+} */
 
 .form-container form {
     width: 100%;
@@ -512,6 +517,73 @@ a.installation-link:hover {
 
 
 /* Realizations page end */
+
+/* Pricing page start */
+
+
+/* Pricing page end */
+
+
+/* Contact page start */
+
+.contact-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 10px 50px 10px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.two-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.two-inputs input {
+    flex-basis: 50%;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.contact-form input:nth-child(2) {
+    width: 100%;
+}
+
+address a {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.contact-form .send-msg {
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    outline: none;
+    display: block;
+    padding: 10px 15px;
+    align-self: flex-start;
+}
+
+/* Contact page end */
 
 iframe {
     width: 100%;

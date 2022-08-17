@@ -14,7 +14,7 @@
     <div class="section-content">
         <div class="row">
             <div class="col-12 col-md-4 sidebar">
-                <div class="form-container">
+                <!-- <div class="form-container">
                     <h3>Kalkulator Benzyna - LPG</h3>
                     <form action="">
                         <input type="number" placeholder="Ilość kilometrów rocznie">
@@ -22,7 +22,7 @@
                         <input type="submit" value="Sprawdź" class="calculator-submit">
                     </form>
                     <a href="#" class="calculator-contact">Wycena montażu instalacji gazowej</a>
-                </div>
+                </div> -->
                 <div class="realizations-container">
                     <h3>Ostatnie realizacje</h3>
                     <div class="last-realizations-block">

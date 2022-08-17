@@ -18,6 +18,8 @@ Route::get('/', [PagesController::class, 'getHomePage'])->name('home');
 Route::get('/instalacje-gazowe', [PagesController::class, 'getInstallations'])->name('installations');
 Route::get('/serwis-lpg', [PagesController::class, 'getService'])->name('service');
 Route::get('/realizacje', [PagesController::class, 'getRealizations'])->name('realizations');
+Route::get('/cennik', [PagesController::class, 'getPricing'])->name('pricing');
+Route::get('/kontakt', [PagesController::class, 'getContact'])->name('contact');
 
 
 Route::group(['prefix' => 'admin'], function () {

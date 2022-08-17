@@ -11,13 +11,13 @@
                 <a href="{{ route('service') }}">Serwis LPG</a>
             </li>
             <li class="menu-item">
-                <a href="#">Cennik</a>
+                <a href="{{ route('pricing') }}">Cennik</a>
             </li>
             <li class="menu-item">
                 <a href="{{ route('realizations') }}">Realizacje</a>
             </li>
             <li class="menu-item">
-                <a href="#">Kontakt</a>
+                <a href="{{ route('contact') }}">Kontakt</a>
             </li>
         </ul>
     </div>

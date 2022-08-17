@@ -21,4 +21,12 @@ class PagesController extends Controller
     public function getRealizations() {
         return view('realizations');
     }
+
+     public function getPricing() {
+        return view('pricing');
+    }
+
+     public function getContact() {
+        return view('contact');
+    }
 }
