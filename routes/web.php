@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,11 @@ Route::controller(PagesController::class)->group(function () {
     Route::get('/cennik', 'getPricing')->name('pricing');
     Route::get('/kontakt', 'getContact')->name('contact');
 });
+
+Route::controller(ContactController::class)->group(function () {
+    Route::post('/kontakt', 'postContact')->name('post.contact');
+});
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
