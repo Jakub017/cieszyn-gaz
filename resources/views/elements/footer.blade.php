@@ -5,4 +5,5 @@
 <footer>
     <p>© 2022 Cieszyn-gaz.pl, Wszelkie prawa zastrzeżone.</p>
     <p>Designed by: <a target="_blank" href="https://www.stronydlafirm.eu/">StronyDlaFirm.eu</a></p>
+    <a href="{{ url('wycena-instalacji') }}" class="installation-valuation-button">Wycena montażu instalacji gazowej</a>
 </footer>

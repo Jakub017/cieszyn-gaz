@@ -107,7 +107,7 @@
                 <h5 class="installation-name"> OPTIMA EXPERT</h5>
                 <a href="{{ asset('folder/optima expert.pdf') }}" class="installation-link">Folder</a>
             </li>
-        </ul>
+        </ul>        
     </div>
 </section>
 @endsection

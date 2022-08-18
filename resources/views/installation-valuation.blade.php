@@ -4,7 +4,7 @@
 
 <section id="installations">
     <div class="installations-wrapper">
-        <h1>Instalacje gazowe</h1>
+        <h1>Wycena instalacji gazowej LPG</h1>
         
         @if (Session::has('success'))
             <div class="alert alert-success">
@@ -43,7 +43,7 @@
                 </div>
             </div>
             @csrf
-            <input class="send-msg" type="submit" value="Wyślij zapytanie">
+            <input class="installation-link" type="submit" value="Wyślij zapytanie">
         </form>
 
     </div>

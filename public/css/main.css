@@ -742,6 +742,20 @@ address a {
     width: 70%;
 }
 
+input.installation-link {
+    display: block;
+    color: #fff;
+    background-color: var(--orange);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+input.installation-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 /* Valuation page end */
 iframe {
     width: 100%;
@@ -769,6 +783,24 @@ footer p {
     max-width: 1300px;
     margin: 0 auto;
     padding: 50px 10px 50px 10px;
+}
+
+.installation-valuation-button {
+    position: fixed;
+    bottom: -4px;
+    right: 10px; 
+    z-index: 10;
+    display: block;
+    color: #fff;
+    background-color: var(--orange);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.installation-valuation-button:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 /* Media Queries */
