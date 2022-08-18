@@ -18,6 +18,7 @@ use App\Http\Controllers\ContactController;
 Route::controller(PagesController::class)->group(function () {
     Route::get('/', 'getHomePage')->name('home');
     Route::get('/instalacje-gazowe', 'getInstallations')->name('installations');
+    Route::get('/wycena-instalacji', 'getInstallationValuation')->name('installation.valuation');
     Route::get('/serwis-lpg', 'getService')->name('service');
     Route::get('/realizacje', 'getRealizations')->name('realizations');
     Route::get('/cennik', 'getPricing')->name('pricing');
@@ -27,6 +28,7 @@ Route::controller(PagesController::class)->group(function () {
 
 Route::controller(ContactController::class)->group(function () {
     Route::post('/kontakt', 'postContact')->name('post.contact');
+    Route::post('/wycena-instalacji', 'postInstallationValuation')->name('post.installation.valuation');
 });
 
 

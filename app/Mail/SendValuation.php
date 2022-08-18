@@ -7,7 +7,7 @@ use Illuminate\Contracts\Quene\ShouldQuene;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class SendContact extends Mailable
+class SendValuation extends Mailable
 {
     use Queueable, SerializesModels;
     public $dataForEmail;
@@ -29,13 +29,19 @@ class SendContact extends Mailable
     {
         return $this->from($this->dataForEmail['emailFrom'])
 //            ->to('aga.stronydlafirm+toten@gmail.com')
-            ->view('emails.sendContact')
+//            ->to($this->dataForEmail['emailTo'])
+            ->view('emails.sendValuation')
             ->subject($this->dataForEmail['title'])
             ->with([
+                'brand' => $this->dataForEmail['brand'],
+                'model' => $this->dataForEmail['model'],
+                'production_date' => $this->dataForEmail['production_date'],
+                'capacity' => $this->dataForEmail['capacity'],
+                'engine_power' => $this->dataForEmail['engine_power'],
                 'name' => $this->dataForEmail['name'],
                 'email' => $this->dataForEmail['email'],
                 'phone' => $this->dataForEmail['phone'],
-                'userMessage' => $this->dataForEmail['userMessage'],
+                'comment' => $this->dataForEmail['comment'],
                 'appUrl' => $this->dataForEmail['appUrl'],
             ]);
     }
