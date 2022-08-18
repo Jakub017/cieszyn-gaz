@@ -28,15 +28,17 @@
                     <div class="last-realizations-block">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('img/mini_1.png') }}" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
+                                @foreach($lastRealizations as $lastRealization)
+                                    <div class="carousel-item active">
+                                        <img src="{{ asset('storage/'.$lastRealization->photo) }}" class="d-block w-100" alt="...">
+                                    </div>
+                                @endforeach
+<!--                                <div class="carousel-item">
                                     <img src="{{ asset('img/realizacja2.png') }}" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="{{ asset('img/realizacja3.png') }}" class="d-block w-100" alt="...">
-                                </div>
+                                </div>-->
                             </div>
                             <button class="carousel-control-prev" type="button"
                                 data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -50,7 +52,7 @@
                             </button>
                         </div>
                     </div>
-                    <a href="#" class="see-realizations">Zobacz inne realizacje</a>
+                    <a href="{{ url('/realizacje') }}" class="see-realizations">Zobacz inne realizacje</a>
                 </div>
             </div>
             <div class="col-12 col-md-8 content">

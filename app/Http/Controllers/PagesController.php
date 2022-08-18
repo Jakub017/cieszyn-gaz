@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function getHomePage() {
-        return view('home');
+        $lastRealizations = \App\Models\Realization::where('active', 1)->inRandomOrder()->limit(5)->get();
+
+        return view('home', ['lastRealizations' => $lastRealizations]);
     }
 
     public function getInstallations() {
